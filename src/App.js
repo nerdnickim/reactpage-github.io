@@ -1,7 +1,18 @@
 import React from "react";
+import styled, { ThemeProvider } from "styled-components";
+import Theme from "./Styles/Theme";
+import GlobalStyles from "./Styles/GlobalStyles";
+import Routes from "./Components/Routes";
 
-function App() {
-	return <div className="App"></div>;
-}
+const Wrapper = styled.div``;
 
-export default App;
+export default () => {
+	return (
+		<ThemeProvider theme={Theme}>
+			<GlobalStyles />
+			<Wrapper>
+				<Routes />
+			</Wrapper>
+		</ThemeProvider>
+	);
+};
