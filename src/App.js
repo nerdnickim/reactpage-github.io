@@ -12,7 +12,7 @@ import ThirdCard from "./Routes/ThirdCard";
 const Wrapper = styled.div``;
 
 const Title = styled.div`
-	font-size: 4rem;
+	font-size: 4vw;
 	margin-left: 40px;
 	padding-left: 30px;
 `;

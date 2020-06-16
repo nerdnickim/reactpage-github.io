@@ -123,6 +123,7 @@ export default ({ props }) => {
 						transition: "all 0.3s linear",
 						fontSize: "2vw",
 						marginTop: "2vh",
+						cursor: "pointer",
 					}}
 					className="navUl"
 				>

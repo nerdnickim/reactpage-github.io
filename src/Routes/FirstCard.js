@@ -42,7 +42,7 @@ const AContain = styled.div`
 
 const Ahref = styled.a`
 	display: flex;
-	font-size: 2rem;
+	font-size: 2vw;
 	color: #615e5d;
 	&:hover {
 		text-decoration: underline;

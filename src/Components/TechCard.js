@@ -22,7 +22,7 @@ const Image = styled.img`
 
 const Font = styled.div`
 	text-align: center;
-	font-size: 2rem;
+	font-size: 2vw;
 `;
 
 const TechCard = ({ src, text }) => (
