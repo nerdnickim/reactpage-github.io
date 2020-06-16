@@ -20,8 +20,8 @@ const Title = styled.div`
 export default () => {
 	return (
 		<ThemeProvider theme={Theme}>
-			<GlobalStyles />
 			<Router>
+				<GlobalStyles />
 				<Wrapper>
 					<BusinessCard props={""} />
 					<Title id="firstCard">
