@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import FatText from "../Components/FatText";
+import ImageContainer from "../Components/ImageContainer";
+import TechCard from "../Components/TechCard";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -11,22 +12,18 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-	background-color: "purple";
 	width: 90%;
-    height: 80%;
-    padding: 20px; 0 20px 20px;
-`;
-
-const Font = styled.div`
-	font-size: 3rem;
+	padding: 20px 0 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 19%);
 `;
 
 export default () => (
 	<Wrapper>
 		<Card>
-			<Font>
-				<FatText style={{}} text={"김의교"} />
-			</Font>
+			{ImageContainer[3].icon.map((img) => (
+				<TechCard key={img.name} src={img.src} text={img.name} />
+			))}
 		</Card>
 	</Wrapper>
 );
