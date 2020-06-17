@@ -6,6 +6,9 @@ const ImgWrapper = styled.div`
 	flex-direction: column;
 	width: 75%;
 	margin-bottom: 30px;
+	@media only screen and (max-width: 500px) {
+		width: 95%;
+	}
 `;
 
 const Div = styled.div`

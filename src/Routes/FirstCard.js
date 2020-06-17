@@ -17,6 +17,10 @@ const Card = styled.div`
 	width: 90%;
 	height: 80%;
 	padding: 20px 0 20px 20px;
+	@media only screen and (max-width: 500px) {
+		width: 100%;
+		height: 100%;
+	}
 `;
 
 const NewWave = styled.div`
@@ -49,6 +53,15 @@ const Ahref = styled.a`
 	}
 `;
 
+const Video = styled.div`
+	width: 75%;
+	height: 70vh;
+	@media only screen and (max-width: 500px) {
+		width: 95%;
+		height: 30%;
+	}
+`;
+
 export default () => {
 	return (
 		<Wrapper>
@@ -57,12 +70,14 @@ export default () => {
 					{ImageContainer[0].newWave.map((img) => (
 						<WorksCard key={img.name} src={img.src} />
 					))}
-					<ReactPlayer
-						controls={true}
-						url={"https://youtu.be/S9Kx6AvsfxY"}
-						width="75%"
-						height="70vh"
-					/>
+					<Video>
+						<ReactPlayer
+							controls={true}
+							url={"https://youtu.be/S9Kx6AvsfxY"}
+							width="100%"
+							height="100%"
+						/>
+					</Video>
 					<AContain>
 						<Ahref href="http://www.newwaveboys.co.kr/index.html">
 							<FatText text={"Go to NEWWAVEBOYS"} />
@@ -78,12 +93,14 @@ export default () => {
 					{ImageContainer[2].cloning.map((img) => (
 						<WorksCard key={img.name} src={img.src} />
 					))}
-					<ReactPlayer
-						controls={true}
-						url={"https://youtu.be/ofur21I3Bpo"}
-						width="75%"
-						height="70vh"
-					/>
+					<Video>
+						<ReactPlayer
+							controls={true}
+							url={"https://youtu.be/ofur21I3Bpo"}
+							width="100%"
+							height="100%"
+						/>
+					</Video>
 					<AContain>
 						<Ahref href="https://cloninggram.netlify.app">
 							<FatText text={"Go to Cloninggram"} />

@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import FatText from "../Components/FatText";
-import FirstCard from "./FirstCard";
-import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -10,6 +8,9 @@ const Wrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	@media only screen and (max-width: 500px) {
+		height: 50vh;
+	}
 `;
 
 const Card = styled.div`
@@ -23,10 +24,13 @@ const Card = styled.div`
 	transition: all 0.6s linear;
 	box-shadow: 3px 4px 10px 1px gray;
 	z-index: 4;
+	@media only screen and (max-width: 500px) {
+		height: 30%;
+	}
 `;
 
 const Font = styled.div`
-	font-size: 3rem;
+	font-size: 5vw;
 `;
 
 const Header = styled.header``;
@@ -41,6 +45,9 @@ const Ul = styled.ul`
 
 const Li = styled.li`
 	margin-bottom: 3vh;
+	@media only screen and (max-width: 500px) {
+		margin-bottom: 1vh;
+	}
 `;
 
 const Nav = styled.nav`
@@ -51,7 +58,7 @@ const Nav = styled.nav`
 	text-align: right;
 `;
 
-export default ({ props }) => {
+export default () => {
 	let state = false;
 
 	const onScroll = (e) => {
@@ -59,22 +66,32 @@ export default ({ props }) => {
 		const businessCard = document.querySelector(".businessCard");
 		const navUl = document.querySelector(".navUl");
 
+		const x = window.matchMedia("(max-width: 500px)");
+
 		if (window.innerHeight - window.scrollY <= scrollTop + 300) {
-			businessCard.style.transform = `scale(0.25)`;
-			businessCard.style.position = `fixed`;
-			businessCard.style.top = `4vh`;
-			businessCard.style.right = `2vw`;
-			businessCard.style.cursor = "pointer";
-			state = true;
-			navUl.style.transform = "translateX(0%)";
+			if (x.matches) {
+				businessCard.style.transform = "translateX(200%)";
+			} else {
+				businessCard.style.transform = `scale(0.25)`;
+				businessCard.style.position = `fixed`;
+				businessCard.style.top = `4vh`;
+				businessCard.style.right = `2vw`;
+				businessCard.style.cursor = "pointer";
+				state = true;
+				navUl.style.transform = "translateX(0%)";
+			}
 		} else {
-			businessCard.style.transform = `scale(1.0)`;
-			businessCard.style.position = `absolute`;
-			businessCard.style.top = ``;
-			businessCard.style.right = ``;
-			businessCard.style.cursor = "";
-			state = false;
-			navUl.style.transform = "translateX(200%)";
+			if (x.matches) {
+				businessCard.style.transform = "translateX(0%)";
+			} else {
+				businessCard.style.transform = `scale(1.0)`;
+				businessCard.style.position = `absolute`;
+				businessCard.style.top = ``;
+				businessCard.style.right = ``;
+				businessCard.style.cursor = "";
+				state = false;
+				navUl.style.transform = "translateX(200%)";
+			}
 		}
 	};
 

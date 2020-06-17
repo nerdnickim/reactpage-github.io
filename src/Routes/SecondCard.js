@@ -5,17 +5,20 @@ import TechCard from "../Components/TechCard";
 
 const Wrapper = styled.div`
 	width: 100%;
-	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	margin-bottom: 40px;
 `;
 
 const Card = styled.div`
 	width: 90%;
-	padding: 20px 0 20px 20px;
+	padding: 20px 0 20px 0;
 	display: grid;
 	grid-template-columns: repeat(4, 19%);
+	@media only screen and (max-width: 500px) {
+		grid-template-columns: repeat(4, 25%);
+	}
 `;
 
 export default () => (

@@ -4,7 +4,7 @@ import FatText from "../Components/FatText";
 
 const Wrapper = styled.div`
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 	justify-content: center;
 	align-items: center;
 	display: flex;

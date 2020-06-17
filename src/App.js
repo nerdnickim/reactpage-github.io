@@ -28,7 +28,7 @@ export default () => {
 						<FatText text={"Works"} />
 					</Title>
 					<FirstCard />
-					<Title id="secondCard">
+					<Title id="secondCard" style={{ marginTop: "20px" }}>
 						<FatText text={"Technology"} />
 					</Title>
 					<SecondCard />
