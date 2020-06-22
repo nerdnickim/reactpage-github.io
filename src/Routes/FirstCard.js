@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
 import ImageContainer from "../Components/ImageContainer";
 import FatText from "../Components/FatText";
 import WorksCard from "../Components/WorksCard";
@@ -71,12 +70,14 @@ export default () => {
 						<WorksCard key={img.name} src={img.src} />
 					))}
 					<Video>
-						<ReactPlayer
-							controls={true}
-							url={"https://youtu.be/S9Kx6AvsfxY"}
+						<iframe
 							width="100%"
 							height="100%"
-						/>
+							src="https://www.youtube.com/embed/S9Kx6AvsfxY"
+							frameBorder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						></iframe>
 					</Video>
 					<AContain>
 						<Ahref href="http://www.newwaveboys.co.kr/index.html">
@@ -94,12 +95,14 @@ export default () => {
 						<WorksCard key={img.name} src={img.src} />
 					))}
 					<Video>
-						<ReactPlayer
-							controls={true}
-							url={"https://youtu.be/ofur21I3Bpo"}
+						<iframe
 							width="100%"
 							height="100%"
-						/>
+							src="https://www.youtube.com/embed/ofur21I3Bpo"
+							frameBorder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						></iframe>
 					</Video>
 					<AContain>
 						<Ahref href="https://cloninggram.netlify.app">

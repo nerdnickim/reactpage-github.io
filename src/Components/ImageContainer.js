@@ -14,6 +14,8 @@ import webUserDetail from "../Images/cloninggram/webUserDetail.png";
 import prisma from "../Images/icons/prisma.png";
 import expo from "../Images/icons/expo.png";
 
+import cardBack from "../Images/icons/cardBack.png";
+
 const ImageContainer = [
 	{
 		newWave: [
@@ -51,6 +53,9 @@ const ImageContainer = [
 			{ name: "Expo", src: expo },
 			{ name: "Pug", src: "https://img.icons8.com/color/256/000000/pug.png" },
 		],
+	},
+	{
+		backCard: [{ name: "back", src: cardBack }],
 	},
 ];
 
