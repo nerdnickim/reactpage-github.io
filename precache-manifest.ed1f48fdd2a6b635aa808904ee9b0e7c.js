@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7040f64f9d417178358c2a02b6cb8727",
+    "revision": "da48298971b60f3693fbac475e9a6da1",
     "url": "/reactpage/index.html"
   },
   {
-    "revision": "db520200941e7a441fbb",
-    "url": "/reactpage/static/js/2.f6faed21.chunk.js"
+    "revision": "31916cb48bcd41a5d03e",
+    "url": "/reactpage/static/js/2.5673d682.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/reactpage/static/js/2.f6faed21.chunk.js.LICENSE.txt"
+    "url": "/reactpage/static/js/2.5673d682.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "11dd52373ca4bd6b59ce",
-    "url": "/reactpage/static/js/main.34742aa7.chunk.js"
+    "revision": "0ddfa75d56c39671461e",
+    "url": "/reactpage/static/js/main.ce8ea290.chunk.js"
   },
   {
     "revision": "b7bade07336660c85c55",
     "url": "/reactpage/static/js/runtime-main.906b3680.js"
+  },
+  {
+    "revision": "e38921db8becb25da0e730b22a903071",
+    "url": "/reactpage/static/media/cardBack.e38921db.png"
   },
   {
     "revision": "225d2b3e02e7f2efed0e6d5708b8c321",
